@@ -1,7 +1,9 @@
 package com.schooldevops.springbatch.batchsample.config;
 
 import lombok.Getter;
+import lombok.Setter;
 
+@Setter
 @Getter
 public class Customer {
 
@@ -12,15 +14,4 @@ public class Customer {
 	public Customer() {
 	}
 
-	public void setName(String name) {
-		this.name = name;
-	}
-
-	public void setAge(int age) {
-		this.age = age;
-	}
-
-	public void setGender(String gender) {
-		this.gender = gender;
-	}
 }
