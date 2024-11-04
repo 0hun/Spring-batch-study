@@ -36,6 +36,7 @@ public class FlatFileItemJobConfig {
 	private ConcurrentHashMap<String, Integer> aggregateInfos = new ConcurrentHashMap<>();
 
 	private final ItemProcessor<Customer, Customer> itemProcessor = new AggregateCustomerProcessor(aggregateInfos);
+
 	@Bean
 	public FlatFileItemReader<Customer> flatFileItemReader() {
 
