@@ -5,18 +5,23 @@ spring:
       initialize-schema: embedded
     job:
       enabled: true
-      name: FLAT_FILE_WRITER_CHUNK_JOB
+      name: JDBC_BATCH_WRITER_CHUNK_JOB
+#  datasource:
+#    driver-class-name: org.h2.Driver  # Database를 H2로 사용하겠다.
+#    url: jdbc:h2:~/test  # H2 접속 정보
+#    username: sa  # H2 접속 시 입력할 username 정보 (원하는 것으로 입력)
+#    password:  # H2 접속 시 입력할 password 정보 (원하는 것으로 입력)
+#    hikari:
+#      maximum-pool-size: 10
+#  h2:
+#    console: # H2 DB를 웹에서 관리할 수 있는 기능
+#      enabled: true           # H2 Console 사용 여부
+#      path: /h2-console       # H2 Console 접속 주소
   datasource:
-    driver-class-name: org.h2.Driver  # Database를 H2로 사용하겠다.
-    url: jdbc:h2:~/test  # H2 접속 정보
-    username: sa  # H2 접속 시 입력할 username 정보 (원하는 것으로 입력)
-    password:  # H2 접속 시 입력할 password 정보 (원하는 것으로 입력)
-    hikari:
-      maximum-pool-size: 10
-  h2:
-    console: # H2 DB를 웹에서 관리할 수 있는 기능
-      enabled: true           # H2 Console 사용 여부
-      path: /h2-console       # H2 Console 접속 주소
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/testdb?useUnicode=true&characterEncoding=utf8&clusterInstanceHostPattern=?&zeroDateTimeBehavior=CONVERT_TO_NULL&allowMultiQueries=true
+    username: root
+    password: root1234
   jpa:
     hibernate:
       ddl-auto: update
