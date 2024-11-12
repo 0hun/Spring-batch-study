@@ -15,14 +15,14 @@ import lombok.Setter;
 public class Customer {
 
 	@Id
-	@GeneratedValue(strategy = GenerationType.AUTO)
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private int id;
 
 	private String name;
 	private int age;
 	private String gender;
 
-	protected Customer() {
+	public Customer() {
 	}
 
 	public Customer(int id, String name, int age, String gender) {
