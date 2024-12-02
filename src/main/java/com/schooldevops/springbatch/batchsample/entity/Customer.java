@@ -1,4 +1,4 @@
-package com.schooldevops.springbatch.batchsample.config;
+package com.schooldevops.springbatch.batchsample.entity;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
@@ -8,7 +8,6 @@ import jakarta.persistence.Table;
 import lombok.Getter;
 import lombok.Setter;
 
-@Setter
 @Getter
 @Entity
 @Table(name = "customer2")

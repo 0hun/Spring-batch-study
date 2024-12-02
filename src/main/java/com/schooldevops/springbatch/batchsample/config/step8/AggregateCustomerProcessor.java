@@ -1,8 +1,10 @@
-package com.schooldevops.springbatch.batchsample.config;
+package com.schooldevops.springbatch.batchsample.config.step8;
 
 import java.util.concurrent.ConcurrentHashMap;
 
 import org.springframework.batch.item.ItemProcessor;
+
+import com.schooldevops.springbatch.batchsample.entity.Customer;
 
 import lombok.extern.slf4j.Slf4j;
 

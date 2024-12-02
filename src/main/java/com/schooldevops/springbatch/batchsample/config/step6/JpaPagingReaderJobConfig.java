@@ -1,4 +1,4 @@
-package com.schooldevops.springbatch.batchsample.config;
+package com.schooldevops.springbatch.batchsample.config.step6;
 
 import java.util.Collections;
 
@@ -19,6 +19,9 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.core.io.FileSystemResource;
 import org.springframework.transaction.PlatformTransactionManager;
+
+import com.schooldevops.springbatch.batchsample.entity.Customer;
+
 import jakarta.persistence.EntityManagerFactory;
 
 import lombok.RequiredArgsConstructor;

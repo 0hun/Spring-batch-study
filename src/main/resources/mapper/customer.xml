@@ -3,7 +3,7 @@
 
 <mapper namespace="com.schooldevops.springbatch.batchsample.jobs">
 
-    <resultMap id="customerResult" type="com.schooldevops.springbatch.batchsample.config.Customer">
+    <resultMap id="customerResult" type="com.schooldevops.springbatch.batchsample.entity.Customer">
         <result property="id" column="id"/>
         <result property="name" column="name"/>
         <result property="age" column="age"/>
@@ -16,7 +16,7 @@
                  LIMIT #{_skiprows}, #{_pagesize}
     </select>
 
-    <insert id="insertCustomers" parameterType="com.schooldevops.springbatch.batchsample.config.Customer">
+    <insert id="insertCustomers" parameterType="com.schooldevops.springbatch.batchsample.entity.Customer">
         INSERT INTO customer2(name, age, gender) VALUES (#{name}, #{age}, #{gender});
     </insert>
 </mapper>

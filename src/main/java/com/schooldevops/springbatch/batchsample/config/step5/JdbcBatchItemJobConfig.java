@@ -1,4 +1,4 @@
-package com.schooldevops.springbatch.batchsample.config;
+package com.schooldevops.springbatch.batchsample.config.step5;
 
 import javax.sql.DataSource;
 
@@ -17,6 +17,8 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.core.io.ClassPathResource;
 import org.springframework.transaction.PlatformTransactionManager;
+
+import com.schooldevops.springbatch.batchsample.entity.Customer;
 
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;

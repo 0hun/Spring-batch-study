@@ -1,4 +1,4 @@
-package com.schooldevops.springbatch.batchsample.config;
+package com.schooldevops.springbatch.batchsample.config.step4;
 
 import java.util.concurrent.ConcurrentHashMap;
 
@@ -19,6 +19,9 @@ import org.springframework.context.annotation.Configuration;
 import org.springframework.core.io.ClassPathResource;
 import org.springframework.core.io.FileSystemResource;
 import org.springframework.transaction.PlatformTransactionManager;
+
+import com.schooldevops.springbatch.batchsample.config.step8.AggregateCustomerProcessor;
+import com.schooldevops.springbatch.batchsample.entity.Customer;
 
 import lombok.extern.slf4j.Slf4j;
 

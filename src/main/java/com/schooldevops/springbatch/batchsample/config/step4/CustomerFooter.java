@@ -1,4 +1,4 @@
-package com.schooldevops.springbatch.batchsample.config;
+package com.schooldevops.springbatch.batchsample.config.step4;
 
 import java.io.IOException;
 import java.io.Writer;

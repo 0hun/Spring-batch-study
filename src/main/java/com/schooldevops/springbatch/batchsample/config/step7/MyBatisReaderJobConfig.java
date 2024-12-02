@@ -1,4 +1,4 @@
-package com.schooldevops.springbatch.batchsample.config;
+package com.schooldevops.springbatch.batchsample.config.step7;
 
 import java.util.List;
 
@@ -22,6 +22,10 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.core.io.FileSystemResource;
 import org.springframework.transaction.PlatformTransactionManager;
+
+import com.schooldevops.springbatch.batchsample.config.step8.LowerCaseItemProcessor;
+import com.schooldevops.springbatch.batchsample.config.step8.After20YearsItemProcessor;
+import com.schooldevops.springbatch.batchsample.entity.Customer;
 
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
